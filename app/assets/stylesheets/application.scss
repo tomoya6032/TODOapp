@@ -1,4 +1,7 @@
+@import 'header';
+@import 'tabs';
 @import 'variables';
+@import 'card';
 
 html {
     word-spacing: 1px;
@@ -8,26 +11,33 @@ html {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     height: 100%;
-  }
+}
 
-  body {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
     height: 100%;
     background-color: $base-bg-color;
     font-size: 1em;
     color: $text-base-color;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
     color: $text-base-color;
-  }
+}
 
-  .container {
+.container {
     padding: 16px 16px;
     width: 100%;
-  }
+}
 
-  .float_btn {
+.float_btn {
     position: fixed;
     bottom: 16px;
     right: 16px;
@@ -42,4 +52,4 @@ html {
     i {
       margin-top: 22px;
     }
-  }
+}
